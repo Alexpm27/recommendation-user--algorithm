@@ -48,7 +48,7 @@ def get_recommendations():
         perfil = []
         for interest in user.get('interests', []):
             perfil.append(interest.get('description', ''))
-            perfil.extend(interest.get('activities', []))
+            #perfil.extend(interest.get('activities', []))
         profile[user['id']] = ' '.join(perfil)
         user_details[user.get('id')] = user
 
